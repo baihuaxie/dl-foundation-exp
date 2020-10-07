@@ -23,8 +23,9 @@
 
 *.log
 *.zip
-
+experiment_ideas_tuples.md
 **/96_work_logs/**
 **/97_assets/**
 **/98_notes/**
+**/99_refs/**
 **/runs/**
