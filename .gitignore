@@ -34,3 +34,6 @@ experiment_ideas_tuples.md
 experiment-notes.md
 how-to-do-research.md
 assets/images/dl-01-10152020-debug-armijo-line-search-dot-product-issue.png
+dl-foundation-experiment-notes.md
+**/runs/**
+**/launch-test/**
