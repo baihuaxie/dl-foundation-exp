@@ -8,7 +8,7 @@ import launch
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--exp_dir', default='./runs/launch-test',
+parser.add_argument('--exp_dir', default='./experiments/launch-test',
                     help='Directory containing params.json')
 parser.add_argument('--data_dir', default='./data/', help="Directory containing the dataset")
 
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     models = [
         #'resnet18',
         #'resnet34',
-        #'resnet50',
+        'resnet50',
         #'resnet101',
         #'resnet152',
         #'mobilenet20_1p0_t4',
@@ -38,12 +38,12 @@ if __name__ == "__main__":
         #'mnasneta1',
         #'shufflenetv2_51_s0p5',
         #'shufflenetv2_51_s1p5',
-        'resnext50_32x4d',
-        'wide_resnet50_2',
-        'mobilenet20_1p0_t3',
-        'mobilenetv1_28_1p0_32',
-        'shufflenetv2_51_s1p0',
-        'shufflenetv1_50_s1p0_g2',
+        #'resnext50_32x4d',
+        #'wide_resnet50_2',
+        #'mobilenet20_1p0_t3',
+        #'mobilenetv1_28_1p0_32',
+        #'shufflenetv2_51_s1p0',
+        #'shufflenetv1_50_s1p0_g2',
         #'densenet40_k12',
         #'densenet100_k12',
         #'densenet100_k24',

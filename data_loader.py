@@ -34,7 +34,7 @@ import torch
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 from torch.utils.data import Subset
-from torchvision.datasets import CIFAR10
+from torchvision.datasets import CIFAR100
 
 # transforms pipeline for train set
 train_transform = transforms.Compose(
@@ -76,11 +76,11 @@ def fetch_dataset(types, datadir, dataset_name=None):
 
             # load train set
             if split == 'train':
-                dataset = CIFAR10(datadir, download=False, train=True, transform=train_transform)
+                dataset = CIFAR100(datadir, download=False, train=True, transform=train_transform)
 
             # load test set
             if split == 'test':
-                dataset = CIFAR10(datadir, download=False, train=False, transform=test_transform)
+                dataset = CIFAR100(datadir, download=False, train=False, transform=test_transform)
 
             datasets[split] = dataset
 
